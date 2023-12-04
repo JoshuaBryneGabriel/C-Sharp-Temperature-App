@@ -1,0 +1,58 @@
+// Start the program
+Initialize variables
+Initialize UI elements
+
+// Main loop
+while (programIsRunning) {
+    // Handle changes in the Celsius TextBox
+    if (userEntersCelsius) {
+        // Try to parse the input as a double
+        if (parsingIsSuccessful) {
+            // Check if the entered Celsius value is within a valid range
+            if (isValidCelsius) {
+                // Update the Celsius value and refresh the UI
+                UpdateCelsiusValue()
+                RefreshUI()
+            } else {
+                // Display an error message for an invalid temperature range
+                DisplayErrorMessage("Temperature must be between -30 and 200 degrees Celsius.")
+            }
+        }
+    }
+    
+    // Handle changes in the Fahrenheit TextBox
+    else if (userEntersFahrenheit) {
+        // Try to parse the input as a double
+        if (parsingIsSuccessful) {
+            // Convert Fahrenheit to Celsius
+            newCelsius = ConvertFahrenheitToCelsius()
+            
+            // Check if the converted Celsius value is within a valid range
+            if (isValidCelsius) {
+                // Update the Celsius value and refresh the UI
+                UpdateCelsiusValue()
+                RefreshUI()
+            } else {
+                // Display a warning message for an invalid temperature range
+                DisplayWarningMessage("Temperature must be between -30 and 200 degrees Celsius.")
+            }
+        }
+    }
+    
+    // Handle drag-and-drop in the PictureBox
+    else if (userDragsPictureBox) {
+        // Calculate new Celsius value based on the mouse position
+        newCelsius = CalculateCelsiusFromMousePosition()
+        
+        // Update the Celsius value and refresh the UI
+        UpdateCelsiusValue()
+        RefreshUI()
+    }
+    // Handle user request to exit the program
+    else if (userRequestsExit) {
+        // End the program
+        programIsRunning = false
+    }
+}
+
+// End the program

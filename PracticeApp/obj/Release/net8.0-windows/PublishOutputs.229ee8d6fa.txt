@@ -1,0 +1,5 @@
+C:\Users\Lenovo\Documents\Visual Studio 2022\New folder\PracticeApp.exe
+C:\Users\Lenovo\Documents\Visual Studio 2022\New folder\PracticeApp.dll
+C:\Users\Lenovo\Documents\Visual Studio 2022\New folder\PracticeApp.deps.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\New folder\PracticeApp.runtimeconfig.json
+C:\Users\Lenovo\Documents\Visual Studio 2022\New folder\PracticeApp.pdb
